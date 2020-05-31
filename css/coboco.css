@@ -1,0 +1,240 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 微軟正黑體;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  background-image: url(../img/bkg.png);
+}
+
+nav {
+  position: fixed;
+  width: 100%;
+}
+
+nav #box {
+  margin: 59px auto 0;
+  width: 900px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 40% 40% 20%;
+      grid-template-columns: 40% 40% 20%;
+}
+
+nav #box a {
+  color: white;
+  text-decoration: none;
+}
+
+nav #box #menu {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  font-size: 18px;
+}
+
+nav #box #menu:nth-child(2) {
+  text-align: center;
+}
+
+nav #box #menu:nth-child(3) {
+  text-align: right;
+}
+
+nav #box #social {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+  text-align: right;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+nav #box #social:nth-child(2) {
+  text-align: right;
+}
+
+#banner {
+  background-image: url(../img/banner.png);
+  width: 100%;
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+}
+
+#banner img {
+  height: 50vh;
+  width: auto;
+  margin-top: 10%;
+}
+
+#news {
+  width: 100%;
+  text-align: center;
+}
+
+#news h1 {
+  padding: 20px 0;
+}
+
+#news #news-blocks {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+  width: 900px;
+  margin: auto;
+}
+
+#news #news-blocks div {
+  margin: 0 3%;
+  background-color: #fff;
+  padding: 0 5% 5%;
+}
+
+#news #news-blocks div h3 {
+  color: green;
+  padding: 20px 0;
+  font-size: 12px;
+  font-weight: 300;
+}
+
+#news #news-blocks div h4 {
+  font-size: 20px;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+#news #news-blocks div p {
+  font-size: 16px;
+  color: #333;
+  text-align: justify;
+  line-height: 1.8;
+  margin-bottom: 10px;
+}
+
+#news #news-blocks div img {
+  width: 100%;
+  height: auto;
+}
+
+#recommend {
+  width: 100%;
+  text-align: center;
+  position: relative;
+}
+
+#recommend h1 {
+  padding: 20px 0;
+}
+
+#recommend div {
+  width: 200px;
+  position: absolute;
+  top: 200px;
+  left: 65%;
+  text-align: center;
+}
+
+#recommend div h3 {
+  color: gold;
+  letter-spacing: 7px;
+  padding-left: 10px;
+  font-size: 24px;
+  font-weight: 300;
+}
+
+#recommend div h4 {
+  color: #aaa;
+  font-size: 16px;
+  margin: 20px 0;
+}
+
+#recommend div p {
+  letter-spacing: 6px;
+  margin-left: 6px;
+  font-size: 18px;
+  line-height: 2;
+  text-align: justify;
+}
+
+#idea {
+  width: 100%;
+  text-align: center;
+}
+
+#idea h1 {
+  padding: 20px 0;
+}
+
+#idea > div {
+  width: 900px;
+  margin: auto;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 55% 45%;
+      grid-template-columns: 55% 45%;
+}
+
+#idea > div img {
+  width: 100%;
+  height: auto;
+  border: 10px solid white;
+}
+
+#idea > div div {
+  padding: 10px;
+  text-align: left;
+}
+
+#idea > div div h3 {
+  font-size: 18px;
+  letter-spacing: 5px;
+  font-weight: 500;
+}
+
+#idea > div div h4 {
+  font-size: 18px;
+  letter-spacing: 10px;
+  font-weight: 300;
+  margin: 40px 0;
+}
+
+#idea > div div span {
+  font-size: 18px;
+  letter-spacing: 10px;
+  padding: 10px 30px;
+  margin-top: 40px;
+  border: 2px solid #000;
+}
+
+footer {
+  width: 100%;
+  text-align: center;
+  padding: 50px 0;
+}
+
+footer img {
+  margin-bottom: 50px;
+}
+
+footer p {
+  margin: 0 10px;
+}
+/*# sourceMappingURL=coboco.css.map */
