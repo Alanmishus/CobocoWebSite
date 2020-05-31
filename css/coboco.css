@@ -113,26 +113,26 @@ nav #box #social:nth-child(2) {
   margin: auto;
 }
 
-#news #news-blocks div {
+#news #news-blocks > div {
   margin: 0 3%;
   background-color: #fff;
   padding: 0 5% 5%;
 }
 
-#news #news-blocks div h3 {
+#news #news-blocks > div h3 {
   color: green;
   padding: 20px 0;
   font-size: 12px;
   font-weight: 300;
 }
 
-#news #news-blocks div h4 {
+#news #news-blocks > div h4 {
   font-size: 20px;
   margin-bottom: 10px;
   text-align: center;
 }
 
-#news #news-blocks div p {
+#news #news-blocks > div p {
   font-size: 16px;
   color: #333;
   text-align: justify;
@@ -140,20 +140,40 @@ nav #box #social:nth-child(2) {
   margin-bottom: 10px;
 }
 
-#news #news-blocks div img {
+#news #news-blocks > div div {
+  position: relative;
+}
+
+#news #news-blocks > div div::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: #000;
+  z-index: 1;
+  opacity: 0;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+#news #news-blocks > div img {
   width: 100%;
   height: auto;
 }
 
-#news #news-blocks div hr {
+#news #news-blocks > div hr {
   border: 0.5px solid #000;
   width: 0;
   -webkit-transition: 0.5s;
   transition: 0.5s;
 }
 
-#news #news-blocks div:hover hr {
+#news #news-blocks > div:hover hr {
   width: 100%;
+}
+
+#news #news-blocks > div:hover div::before {
+  opacity: 0.5;
 }
 
 #recommend {
